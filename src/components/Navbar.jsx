@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { UserAuth } from '../context/AuthContext';
+import { UserAuth } from '../AuthContext';
 
 const Navbar = () => {
   const {user, logOut} = UserAuth()
@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='flex justify-between items-center p-4 z-[100] w-full absolute'>
+    <div className='flex absolute justify-between items-center p-4 z-[100] w-full'>
       <Link to='/'>
         <h1 className='text-red-600 text-4xl font-bold cursor-pointer'>NETFLIX</h1>
       </Link>
@@ -24,7 +24,7 @@ const Navbar = () => {
       <div>
         <Link to='/account'>
           <button className='text-white pr-4'>
-            Account
+            My List
           </button>
         </Link>
           <button onClick={handleLogout} className='bg-red-600 px-6 py-2 rounded cursor-poiniter text-white'>

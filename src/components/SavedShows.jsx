@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { UserAuth } from '../context/AuthContext';
+import { UserAuth } from '../AuthContext';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import { AiOutlineClose } from 'react-icons/ai';
 import { db } from '../firebase';
@@ -39,7 +39,6 @@ const SavedShows = () => {
 
   return (
     <>
-      <h2 className='text-white font-bold md:text-xl p-4'>My Shows</h2>
       <div className='relative flex items-center group'>
         <MdChevronLeft
           onClick={slideLeft}
@@ -48,12 +47,12 @@ const SavedShows = () => {
         />
         <div 
           id={'slider'} 
-          className='overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative'
+          className='my-4 overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative'
         >
           {movies.map((item, id) => (
             <div
               key={item.id}
-              className='w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2'
+              className='w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-table cursor-pointer relative p-2'
             >
               <img
                 className='w-full h-auto block'
