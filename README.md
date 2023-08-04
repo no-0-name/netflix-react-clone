@@ -2,7 +2,7 @@
 
 This is a project that allows you to create a Netflix clone using React, Tailwind CSS, Firebase, and TMDB API. The project also supports user authentication and saving favorite movies in the Firebase database.
 
-![netflix-clone-photo](https://github.com/no-0-name/netflix-react-clone/blob/main/netflix-clone-photo.png)
+![netflix-clone-photo](https://github.com/no-0-name/netflix-react-clone/blob/main/public/netflix-clone-photo.png)
 
 ## How to run the project
 
